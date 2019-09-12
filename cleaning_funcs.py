@@ -11,8 +11,10 @@ def clean_data(df1,x):
     df1[x]=df1[x].apply(clean_string)
     df1[x] = pd.to_numeric(df1[x], errors='coerce',downcast='signed')
     #df1[x] = df1[x].astype(int)
-    
-def index_a(df,x,m):
+ 
+#where x needs to be the reference column identifier and m the metric on which the data set needs to be disaggregated, 
+#better to start with visits and the repeating the same process for other metrics
+def index_a(df,x,m): 
     df['y'] = df[x].shift(1)
 
     df['a'] = (df['y'] != df[x]).astype(int)
