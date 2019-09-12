@@ -14,11 +14,11 @@ The idea is to create a set of functions to simplify the communications and the 
 
 Cleaning data from not needed characters:
 
-Rename columns if needed so to avoid mismatching and confusion
+* Rename columns if needed so to avoid mismatching and confusion
 
-Turning numerical data columns into python integer or floating so to avoid errors when modelling happens
+* Turning numerical data columns into python integer or floating so to avoid errors when modelling happens
 
-Transforming categorical data into hot encoding to ensure machine understanding of qualitative features
+* Transforming categorical data into hot encoding to ensure machine understanding of qualitative features
 
 Indexing and data reorganization:
 
