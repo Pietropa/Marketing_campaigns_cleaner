@@ -1,4 +1,4 @@
-Background:
+## **Background:**
 
 Machine learning tools, both logistic and regressor methods work on the assumption that features are provided in a numeric format.
 When data are passed from marketing tools analytics like FB or Google, the data are in such a format that features (qualitative characteristics connected to the campaign and to the users who performed certain actions) are in a categorical and badly structured format and cannot be understood for machine learning purposes.
@@ -8,9 +8,9 @@ In this case it can be useful to apply logistic classification and split up the 
 Project goals:
 The idea is to create a set of functions to simplify the communications and the exchanges of data between Marketing and BI-Data Science so to avoid errors in the creation of the models.
 
-What it does?
+## **What it does?**
 
-Data transformation:
+### **Data transformation:**
 
 Cleaning data from not needed characters:
 
