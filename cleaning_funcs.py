@@ -20,6 +20,12 @@ def numeric_variables(df,x):
     df[f'{x}_n'] = df[x].map(audiences)
     
 #Data set reshaping 
+
+#Create new dataframe based on a metric
+def new_df_db(df,x):
+    y = df.loc[df.index.repeat(df[x])]
+    return y
+
 #where x needs to be the reference column identifier and m the metric on which the data set needs to be disaggregated, 
 #better to start with visits and the repeating the same process for other metrics
 def index_a(df,x,m): 
