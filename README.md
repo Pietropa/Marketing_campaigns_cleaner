@@ -25,3 +25,6 @@ Indexing and data reorganization:
 In the case in which linear regression cannot be applicable, or for any reason categorization better suits the scope of the project, more work on data needs to be applied.
 First of all data from marketing comes in a campaigns or ads grouping format while to apply a logistic analysis of any kind user based grouping is needed. In order for this process to work a unique identifier column for the element taken into consideration needs to be given or alternatively created (it can be campaign+date, ad ID +date or a mixture so to identify what it is defined in BI usually as the last aggregation step).
 Based on this, the initial table is going to be reshaped so that every visit from a campaign results as a unique user and campaign features are going to be reattributed to this user. The same process is going to be applied for further website steps so to create different grouped tables with the right events to then be remerged having a complete table fully reshaped and with the right number of events attributed.
+## Example
+In order to show how this approach could possibly be used in real life I took some data from aKaggle challenge.
+https://www.kaggle.com/loveall/clicks-conversion-tracking
