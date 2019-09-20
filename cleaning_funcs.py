@@ -56,7 +56,7 @@ def index_a(df,x,m):
     df['f'] = cycle_list
     df['ID_final']= df[x]+'-'+df['f'].astype(str)
     df[m]= 1
-    df.drop(['y','a','f'], axis=1)
+    df.drop(['y','a','f'], axis=1, inplace=True)
 
 
 # extra functions   
