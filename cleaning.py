@@ -1,11 +1,8 @@
 import pandas as pd
 import numpy as np
-#import re
 from cleaning_funcs import clean_string, clean_data, numeric_variables,unique_ID, new_df_db, index_a
 
 df = pd.read_csv('KAG_conversion_data.csv')
-df.head()
-
 uniqueID_list =['ad_id','xyz_campaign_id','fb_campaign_id','age','gender','interest']
 pattern = '\-|\@|\€|\,'
 
@@ -29,6 +26,8 @@ Visits_tab.head()
 
 df_d =pd.merge(Visits_tab,purchase_tab, how='left', on='ID_final')
 df_final=pd.merge(df_d,conversion_tab,how='left', on='ID_final')
+clean_data(df_final,'Total_Conversion')
+df_final.fillna(0, inplace = True)
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
