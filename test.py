@@ -1,5 +1,5 @@
 import pytest
-import cleaning
+from cleaning import run
 
 @pytest.fixture
 def test_cleaning_works1():
