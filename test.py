@@ -1,5 +1,5 @@
 import pytest
-import cleaning_funcs
+from cleaning import run
 
 def test_cleaning_works1():
     run(df)
