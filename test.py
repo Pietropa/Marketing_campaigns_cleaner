@@ -1,6 +1,7 @@
 import pytest
 import cleaning
 
+@pytest.fixture
 def test_cleaning_works1():
     run(df)
     assert(df_final['Total_Conversion'].dtype == 'int64')
